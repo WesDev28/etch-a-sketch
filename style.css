@@ -1,25 +1,26 @@
 
 *,*:before, *:after {
     box-sizing:border-box;
-
 }
 
 body {
     background:pink;
+    min-height:100vh;
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
 }
-
-
 
 #container {
     width: 960px;
     height:960px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background:black;
     display:flex;
     flex-direction:column;
-    /* gap:10px; */
-}
 
+}
 
 .newRow {
     display:flex;

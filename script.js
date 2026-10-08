@@ -1,5 +1,6 @@
-
+const container = document.querySelector("#container");
 const n = prompt("enter the squares");
+
 
 
 for(let i = 0; i<(n); i++){
