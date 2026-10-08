@@ -5,9 +5,10 @@ const n = prompt("enter the squares");
 for(let i = 0; i<(n); i++){
     const newRow = document.createElement("div");
 
-    newRow.classList.add(`newRow${i}`);
+    newRow.classList.add(`newRow`);
     newRow.style.height = `${100/n}%`;
-    newRow.style.width = "100%";
+    newRow.style.width = `${100/n}%`;
+
     for (let j = 0; j<(n); j++){
         const squareDiv = document.createElement("div");
         squareDiv.classList.add("squareDiv");

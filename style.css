@@ -1,21 +1,32 @@
+
+*,*:before, *:after {
+    box-sizing:border-box;
+
+}
+
 body {
     background:pink;
-    display:flex;
-    justify-content:center;
 }
 
 
 
 #container {
-    width: 800px;
-    height:800px;
-    margin-top:50px;
+    width: 960px;
+    height:960px;
+    margin: 0 auto;
     background:black;
     display:flex;
+    flex-direction:column;
+    /* gap:10px; */
 }
 
 
+.newRow {
+    display:flex;
+    /* gap:10px; */
+}
+
 .squareDiv {
-    box-sizing:border-box;
     border: 1px solid white;
+
 }
