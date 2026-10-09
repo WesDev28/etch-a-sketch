@@ -6,28 +6,32 @@
 body {
     background:pink;
     min-height:100vh;
+    margin:0;
     display:flex;
+    flex-direction:column;
+}
 
-    justify-content:center;
-    align-items:center;
+
+#gridSize {
+    width:min(960px,90vmin);
+    margin:auto auto;
 }
 
 #container {
-    width: 960px;
-    height:960px;
-    /* margin: 0 auto; */
+    width: min(960px,90vmin);
+    aspect-ratio:1/1;
+    margin: auto auto;
     background:black;
     display:flex;
     flex-direction:column;
-
 }
 
 .newRow {
     display:flex;
-    /* gap:10px; */
+    flex:1;
 }
 
 .squareDiv {
     border: 1px solid white;
-
+    flex:1;
 }
