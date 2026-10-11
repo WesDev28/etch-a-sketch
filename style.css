@@ -9,21 +9,27 @@ body {
     margin:0;
     display:flex;
     flex-direction:column;
-}
+    justify-content:center;
+    align-items:center;
 
+}
 
 #gridSize {
     width:min(960px,90vmin);
-    margin:auto auto;
+    font-size:25px;
+    margin:0;
+    margin-bottom:50px;
+    flex:1;
 }
 
 #container {
     width: min(960px,90vmin);
     aspect-ratio:1/1;
-    margin: auto auto;
+
     background:black;
     display:flex;
     flex-direction:column;
+    flex:1;
 }
 
 .newRow {
@@ -34,4 +40,16 @@ body {
 .squareDiv {
     border: 1px solid white;
     flex:1;
+}
+
+
+.hovered {
+    background:blue;
+}
+
+.filter{
+    background:red;
+    filter:blur(2rem);
+    opacity:0.1;
+
 }
