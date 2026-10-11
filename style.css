@@ -11,15 +11,15 @@ body {
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
 }
+
+
 
 #gridSize {
     width:min(960px,90vmin);
     font-size:25px;
     margin:0;
     margin-bottom:50px;
-    flex:1;
 }
 
 #container {
@@ -29,7 +29,6 @@ body {
     background:black;
     display:flex;
     flex-direction:column;
-    flex:1;
 }
 
 .newRow {
@@ -46,6 +45,7 @@ body {
 .hovered {
     background:blue;
 }
+
 
 .filter{
     background:red;
