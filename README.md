@@ -1,8 +1,6 @@
-# etch-a-sketch
-TOP project.
-
+# etch-a-sketch - TOP project.
 
 Main skills practiced.
-  DOM Manipulation and events.
-  Callback functions.
+ * DOM Manipulation and events.
+ *  Callback functions.
   
