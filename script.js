@@ -2,9 +2,11 @@ const container = document.querySelector("#container");
 const gridSize = document.querySelector("#gridSize");
 const submitBtn = document.querySelector("#submitBtn");
 const resetBtn = document.querySelector('#resetBtn');
+const colorInput = document.querySelector('#colorInput')
+
 let n =10;
 
-function displayGrid(n=10){
+function displayGrid(n,color="white"){
     container.replaceChildren();
 
     for(let i = 0; i<(n); i++){
@@ -28,6 +30,7 @@ function displayGrid(n=10){
 
         div.addEventListener("mouseleave", () => {
             div.classList.add("filter");        
+            div.style.background = color;
             let opacity = Number(getComputedStyle(div).opacity);
             div.style.opacity = opacity + 0.1;
         })
@@ -35,11 +38,12 @@ function displayGrid(n=10){
 }
 
 
-displayGrid();
+displayGrid(n);
 
 submitBtn.addEventListener("click", function gridPrompt(){
     n = +(gridSize.value);
-    if (n<=100) {displayGrid(n)}
+    color = colorInput.value;
+    if (n<=100) {displayGrid(n,color)}
 
     else {
         alert("Please enter a value less than or equal to 100")

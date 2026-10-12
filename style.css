@@ -60,8 +60,7 @@ body {
 
 
 .filter{
-    background:red;
-    filter:blur(2rem);
+    /* filter:blur(2rem); */
     opacity:0.1;
 
 }
