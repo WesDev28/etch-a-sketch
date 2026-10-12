@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>etch-a-sketch</title>
     <link rel = "stylesheet" href="./style.css">
     <script src = "./script.js" defer></script> 
 
@@ -11,12 +11,18 @@
 
 <body>
     <div id="template">
+        
         <div class ="controls">
-            <input type="number" id="gridSize" class="inRow" placeholder =
-            "Enter a grid size (1-100)"/>
-            <input type="color" id ="colorInput" value="#ffffff"/>
-            <button id="submitBtn" class="inRow">submit</button>
-            <button id="resetBtn" class="inRow">reset</button>
+            <input type="number" id="gridSize" class="inRow" value = 33
+             placeholder = "Enter a grid size (1-100)"/>
+            <input type="color" id ="colorInput" value="#00ffff"/>
+            <button id="submitBtn" class="inRow">SUBMIT</button>
+            <button id="resetBtn" class="inRow">RESET</button>
+        </div>
+
+        <div class ="gameMode">
+            <button id="randomBtn">RAINBOW MODE</button>
+            <span id="randomStatus">RAINBOW MODE: OFF</span>
         </div>
 
         <div id="container"></div>
