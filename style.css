@@ -19,6 +19,14 @@ body {
     min-height:100vh;
 }
 
+.title{
+    width:min(960px,90vmin);
+    margin-bottom:50px;    
+    font-size:32px;
+    background:white;
+    text-align:center;
+}
+
 .controls{
     display:flex;
     width: min(960px,90vmin);
