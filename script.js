@@ -1,6 +1,8 @@
 const container = document.querySelector("#container");
 const gridSize = document.querySelector("#gridSize");
-
+const submitBtn = document.querySelector("#submitBtn");
+const resetBtn = document.querySelector('#resetBtn');
+let n =10;
 
 function displayGrid(n=10){
     container.replaceChildren();
@@ -35,11 +37,16 @@ function displayGrid(n=10){
 
 displayGrid();
 
-gridSize.addEventListener("click", function gridPrompt(){
-    const n = prompt("ENTER THE GRID SIZE");
+submitBtn.addEventListener("click", function gridPrompt(){
+    n = +(gridSize.value);
     if (n<=100) {displayGrid(n)}
 
     else {
         alert("Please enter a value less than or equal to 100")
         }
+})
+
+
+resetBtn.addEventListener("click", () => {
+    displayGrid(n);
 })
