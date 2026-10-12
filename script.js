@@ -67,6 +67,8 @@ submitBtn.addEventListener("click", function gridPrompt(){
 
 resetBtn.addEventListener("click", () => {
     color = colorInput.value;
+    rainbowMode = false;
+    randomStatus.textContent = 'RANDOM MODE: OFF';
     if (n<=100) {displayGrid(n),color,rainbowMode};
 })
 
